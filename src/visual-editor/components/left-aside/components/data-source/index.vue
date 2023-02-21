@@ -9,18 +9,23 @@
 <template>
   <el-tabs type="border-card" stretch class="data-source">
     <el-tab-pane label="数据模型" lazy>
-      <data-model />
+      <!-- <data-model /> -->
+      <el-button type="primary">添加</el-button>
+      <el-button type="danger">清空</el-button>
     </el-tab-pane>
     <el-tab-pane label="数据接口" lazy>
-      <data-fetch />
+      <!-- <data-fetch /> -->
+      <el-button type="primary">添加</el-button>
+      <el-button type="danger">添加</el-button>
     </el-tab-pane>
   </el-tabs>
 </template>
 
 <script setup lang="tsx" name="基本组件">
   import { DataBoard } from '@element-plus/icons-vue';
-  import DataModel from './data-model.vue';
-  import DataFetch from './data-fetch.vue';
+  // 不使用数据模型和数据接口
+  // import DataModel from './data-model.vue';
+  // import DataFetch from './data-fetch.vue';
 
   defineOptions({
     label: '数据源',

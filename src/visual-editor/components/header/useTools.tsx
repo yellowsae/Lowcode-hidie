@@ -173,7 +173,13 @@ export const useTools: any = () => {
       title: '反馈',
       icon: ChatLineSquare,
       onClick: () => {
-        window.open('https://github.com/jia-wink/Jiawink_H5-lowcode/issues/new');
+        // window.open('https://github.com/jia-wink/Jiawink_H5-lowcode/issues/new');
+        ElMessage({
+          showClose: true,
+          type: 'info',
+          duration: 2000,
+          message: '未开发完毕，敬请期待！',
+        });
       },
     },
   ];
