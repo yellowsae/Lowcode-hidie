@@ -2,7 +2,7 @@
   "name": "vite-vue3-lowcode",
   "version": "0.0.1",
   "private": false,
-  "description": "A Vite2.x + Vue3.x + TypeScript LowCode",
+  "description": "Vite + Vue + TypeScript LowCode",
   "scripts": {
     "bootstrap": "pnpm install",
     "serve": "npm run dev",
@@ -99,22 +99,12 @@
     "vue-tsc": "^0.38.3",
     "windicss": "^3.5.6"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/buqiyuan/vite-vue3-lowcode.git"
-  },
   "keywords": [
     "Vite",
     "Vue3",
-    "TypeScript",
-    "LowCode"
+    "TypeScript"
   ],
-  "author": "buqiyuan",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/buqiyuan/vite-vue3-lowcode/issues"
-  },
-  "homepage": "https://github.com/buqiyuan/vite-vue3-lowcode#readme",
   "engines": {
     "node": ">=14"
   },

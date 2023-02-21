@@ -20,6 +20,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
   const { VITE_BASE_URL } = loadEnv(mode, CWD);
   return {
     base: VITE_BASE_URL, // 设置打包路径
+    // CSS 配置
     css: {
       modules: {
         localsConvention: 'camelCase', // 默认只支持驼峰，修改为同时支持横线和驼峰
@@ -34,6 +35,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       },
       // TODO 构建包含@charset问题 https://github.com/vitejs/vite/issues/5833
       // charset: false,
+      // postcss 自适应
       postcss: {
         plugins: [
           {
@@ -49,6 +51,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
         ],
       },
     },
+    // 插件配置
     plugins: [
       vue(),
       vueJsx(),
@@ -82,6 +85,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
         },
       }),
     ],
+    // 别名配置
     resolve: {
       alias: [
         {
@@ -90,6 +94,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
         },
       ],
     },
+    // 打包配置
     build: {
       cssCodeSplit: true, // 如果设置为false，整个项目中的所有 CSS 将被提取到一个 CSS 文件中
       sourcemap: false, // 构建后是否生成 source map 文件。如果为 true，将会创建一个独立的 source map 文件
@@ -124,7 +129,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
     },
     server: {
       host: '0.0.0.0',
-      port: 10086, // 设置服务启动端口号
+      port: 90001, // 设置服务启动端口号
       open: false, // 设置服务启动时是否自动打开浏览器
       cors: true, // 允许跨域
 
