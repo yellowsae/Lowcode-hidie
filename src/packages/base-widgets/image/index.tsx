@@ -35,7 +35,7 @@ export default {
   ),
   render: ({ props, block, styles }) => {
     const { registerRef } = useGlobalProperties();
-
+    console.log('style', styles);
     return () => (
       <div style={styles}>
         <Image ref={(el) => registerRef(el, block._vid)} {...props} />
@@ -45,7 +45,7 @@ export default {
   props: {
     src: createEditorInputProp({
       label: '图片链接',
-      defaultValue: 'https://img.yzcdn.cn/vant/cat.jpeg',
+      defaultValue: 'https://s1.ax1x.com/2023/02/22/pSj2gN4.png',
     }),
     width: createEditorInputProp({ label: '宽度', defaultValue: 100 }),
     height: createEditorInputProp({ label: '高度', defaultValue: 100 }),

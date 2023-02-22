@@ -16,7 +16,7 @@
     <el-tab-pane label="数据接口" lazy>
       <!-- <data-fetch /> -->
       <el-button type="primary">添加</el-button>
-      <el-button type="danger">添加</el-button>
+      <el-button type="danger">清空</el-button>
     </el-tab-pane>
   </el-tabs>
 </template>
