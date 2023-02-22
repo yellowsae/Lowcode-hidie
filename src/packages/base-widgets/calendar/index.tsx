@@ -3,12 +3,13 @@
  * @Date: 2023-02-22 09:20:00
  */
 import { Calendar, Button } from 'vant';
-import { createEditorInputNumberProp } from '../../../visual-editor/visual-editor.props';
 import type { VisualEditorComponent } from '@/visual-editor/visual-editor.utils';
 import {
   createEditorInputProp, // 生成输入框
   createEditorSelectProp, // 生成下拉框
   createEditorSwitchProp, // 生成开关
+  createEditorColorProp, // 生成颜色选择器
+  createEditorInputNumberProp, // 生成数字输入框
 } from '@/visual-editor/visual-editor.props';
 import { useGlobalProperties } from '@/hooks/useGlobalProperties';
 
@@ -61,7 +62,7 @@ export default {
       ],
       defaultValue: 'single',
     }),
-    color: createEditorInputProp({ label: '日历颜色', defaultValue: '#1989fa' }),
+    color: createEditorColorProp({ label: '日历颜色', defaultValue: '#1989fa' }),
     showConfirm: createEditorSwitchProp({
       label: '显示确认按钮',
       defaultValue: false,
