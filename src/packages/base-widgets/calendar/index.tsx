@@ -2,7 +2,7 @@
  * @Author: yellowsae
  * @Date: 2023-02-22 09:20:00
  */
-import { Calendar } from 'vant';
+import { Cell, Button } from 'vant';
 import type { VisualEditorComponent } from '@/visual-editor/visual-editor.utils';
 import {
   createEditorInputProp, // 生成输入框
@@ -15,7 +15,8 @@ export default {
   key: 'calendar',
   moduleName: 'baseWidgets',
   label: '表单项类型 - 日历',
-  preview: () => <Calendar title="📅" defaultDate={new Date()} style={{ height: 200 }}></Calendar>,
+  preview: () => <Button type={'default'}>📅</Button>,
+  // preview: () => <Calendar title="📅" defaultDate={new Date()} style={{ height: 200 }}></Calendar>,
   render: ({ props, block, styles }) => {
     // const date = ref('');
     // const show = ref(false);
@@ -25,11 +26,11 @@ export default {
     //   date.value = formatDate(value);
     // };
     const { registerRef } = useGlobalProperties();
-    // return () => (
-    //   <div style={styles}>
-    //     <Cell ref={(el) => registerRef(el, block._vid)} {...props}></Cell>
-    //   </div>
-    // );
+    return () => (
+      <div style={styles}>
+        <Cell ref={(el) => registerRef(el, block._vid)} {...props}></Cell>
+      </div>
+    );
     // return () => (
     //   <div>
     //     <Field
@@ -52,16 +53,16 @@ export default {
     //     />
     //   </div>
     // );
-    return () => (
-      <div style={styles}>
-        <Calendar
-          {...props}
-          title="日历"
-          defaultDate={new Date()}
-          ref={(el) => registerRef(el, block._vid)}
-        />
-      </div>
-    );
+    // return () => (
+    //   <div style={styles}>
+    //     <Calendar
+    //       {...props}
+    //       title="日历"
+    //       defaultDate={new Date()}
+    //       ref={(el) => registerRef(el, block._vid)}
+    //     />
+    //   </div>
+    // );
   },
   resize: {
     height: true,
