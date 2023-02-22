@@ -4,6 +4,7 @@ const modules = import.meta.globEager('./*/index.tsx');
 
 const components: Record<string, VisualEditorComponent> = {};
 
+// 循环 所有的组件 并且导出， 方便后续使用
 Object.keys(modules).forEach((key: string) => {
   const name = key.replace(/\.\/(.*)\/index\.(tsx|vue)/, '$1');
   components[name] = modules[key]?.default || modules[key];

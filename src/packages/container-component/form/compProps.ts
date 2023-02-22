@@ -90,3 +90,5 @@ export const compProps = {
     defaultValue: 'onBlur',
   }),
 };
+
+// 侧边栏选中组件 属性的 增加 配置项

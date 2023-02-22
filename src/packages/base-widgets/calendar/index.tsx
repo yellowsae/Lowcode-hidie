@@ -17,43 +17,8 @@ export default {
   moduleName: 'baseWidgets',
   label: '表单项类型 - 日历',
   preview: () => <Button type={'default'}>📅</Button>,
-  // preview: () => <Calendar title="📅" defaultDate={new Date()} style={{ height: 200 }}></Calendar>,
   render: ({ props, block, styles }) => {
-    // const date = ref('');
-    // const show = ref(false);
-    // const formatDate = (date) => `${date.getMonth() + 1}/${date.getDate()}`;
-    // const onConfirm = (value) => {
-    //   show.value = false;
-    //   date.value = formatDate(value);
-    // };
     const { registerRef } = useGlobalProperties();
-    // return () => (
-    //   <div style={styles}>
-    //     <Cell ref={(el) => registerRef(el, block._vid)} {...props}></Cell>
-    //   </div>
-    // );
-    // return () => (
-    //   <div>
-    //     <Field
-    //       {...props}
-    //       modelValue={''}
-    //       v-slots={{
-    //         calendar: () => (
-    //           <div style={styles}>
-    //             <Cell title="单元格" value="内容" onClick={() => (show.value = true)}></Cell>
-    //             <Calendar
-    //               ref={(el) => registerRef(el, block._vid)}
-    //               {...props}
-    //               v-module:show={show.value}
-    //               onConfirm={onConfirm}
-    //             />
-
-    //           </div>
-    //         ),
-    //       }}
-    //     />
-    //   </div>
-    // );
     return () => (
       <div {...props} ref={(el) => registerRef(el, block._vid)} style={styles}>
         <Calendar
@@ -99,7 +64,7 @@ export default {
     color: createEditorInputProp({ label: '日历颜色', defaultValue: '#1989fa' }),
     showConfirm: createEditorSwitchProp({
       label: '显示确认按钮',
-      defaultValue: true,
+      defaultValue: false,
     }),
     minDate: createEditorInputProp({ label: '最小日期', defaultValue: new Date() }),
     maxDate: createEditorInputProp({ label: '最大日期', defaultValue: new Date() }),
@@ -110,6 +75,5 @@ export default {
       label: '确认按钮处于禁用状态时的文字',
       defaultValue: '确定',
     }),
-    firstDayOfWeek: createEditorInputProp({ label: '周起始日', defaultValue: 0 }),
   },
 } as VisualEditorComponent;

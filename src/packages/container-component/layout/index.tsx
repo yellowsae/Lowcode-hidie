@@ -113,3 +113,5 @@ export default {
     }),
   },
 } as VisualEditorComponent;
+
+// 容器组件

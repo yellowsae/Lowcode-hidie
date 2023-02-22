@@ -6,9 +6,7 @@ import { Popup, Button, Cell } from 'vant';
 import type { VisualEditorComponent } from '@/visual-editor/visual-editor.utils';
 import {
   createEditorSwitchProp,
-  createEditorInputProp,
   createEditorSelectProp,
-  createEditorInputNumberProp,
 } from '@/visual-editor/visual-editor.props';
 
 export default {
@@ -31,8 +29,8 @@ export default {
           onClick-overlay={() => {
             show.value = false;
           }}
-          round
-          position="bottom"
+          round={props.round}
+          position={props.position}
           style="height: 30%"
           show={show.value}
         >
@@ -61,26 +59,5 @@ export default {
       ],
       defaultValue: 'bottom',
     }),
-    overlay: createEditorSwitchProp({ label: '是否显示遮罩层', defaultValue: true }),
-    duration: createEditorInputNumberProp({ label: '动画时长(ms)', defaultValue: 300 }),
-    lockScroll: createEditorSwitchProp({ label: '是否锁定背景滚动', defaultValue: true }),
-    LazyRender: createEditorSwitchProp({ label: '是否延迟渲染', defaultValue: true }),
-    closeOnPopstate: createEditorSwitchProp({ label: '是否在页面回退时关闭', defaultValue: true }),
-    closeOnClickOverlay: createEditorSwitchProp({
-      label: '是否在点击遮罩层后关闭',
-      defaultValue: true,
-    }),
-    closeIconPosition: createEditorSelectProp({
-      label: '关闭图标位置',
-      options: [
-        { label: '上', value: 'top' },
-        { label: '下', value: 'bottom' },
-        { label: '左', value: 'left' },
-        { label: '右', value: 'right' },
-      ],
-      defaultValue: 'top',
-    }),
-    transition: createEditorInputProp({ label: '自定义动画名称' }),
-    teleport: createEditorInputProp({ label: '自定义插槽名称' }),
   },
 } as VisualEditorComponent;
