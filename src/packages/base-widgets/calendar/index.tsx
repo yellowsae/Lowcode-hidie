@@ -2,7 +2,8 @@
  * @Author: yellowsae
  * @Date: 2023-02-22 09:20:00
  */
-import { Cell, Button } from 'vant';
+import { Calendar, Button } from 'vant';
+import { createEditorInputNumberProp } from '../../../visual-editor/visual-editor.props';
 import type { VisualEditorComponent } from '@/visual-editor/visual-editor.utils';
 import {
   createEditorInputProp, // 生成输入框
@@ -26,11 +27,11 @@ export default {
     //   date.value = formatDate(value);
     // };
     const { registerRef } = useGlobalProperties();
-    return () => (
-      <div style={styles}>
-        <Cell ref={(el) => registerRef(el, block._vid)} {...props}></Cell>
-      </div>
-    );
+    // return () => (
+    //   <div style={styles}>
+    //     <Cell ref={(el) => registerRef(el, block._vid)} {...props}></Cell>
+    //   </div>
+    // );
     // return () => (
     //   <div>
     //     <Field
@@ -53,16 +54,19 @@ export default {
     //     />
     //   </div>
     // );
-    // return () => (
-    //   <div style={styles}>
-    //     <Calendar
-    //       {...props}
-    //       title="日历"
-    //       defaultDate={new Date()}
-    //       ref={(el) => registerRef(el, block._vid)}
-    //     />
-    //   </div>
-    // );
+    return () => (
+      <div {...props} ref={(el) => registerRef(el, block._vid)} style={styles}>
+        <Calendar
+          showConfirm={props.showConfirm}
+          style="height: 200px"
+          poppable={false}
+          title={props.title}
+          color={props.color}
+          type={props.type}
+          defaultDate={new Date()}
+        />
+      </div>
+    );
   },
   resize: {
     height: true,
@@ -93,32 +97,15 @@ export default {
       defaultValue: 'single',
     }),
     color: createEditorInputProp({ label: '日历颜色', defaultValue: '#1989fa' }),
-    showMark: createEditorSwitchProp({ label: '显示标记', defaultValue: true }),
-    showTitle: createEditorSwitchProp({ label: '显示标题', defaultValue: true }),
-    showSubtitle: createEditorSwitchProp({
-      label: '显示副标题',
-      defaultValue: true,
-    }),
     showConfirm: createEditorSwitchProp({
       label: '显示确认按钮',
       defaultValue: true,
     }),
-    showRangePrompt: createEditorSwitchProp({
-      label: '显示范围提示',
-      defaultValue: true,
-    }),
     minDate: createEditorInputProp({ label: '最小日期', defaultValue: new Date() }),
     maxDate: createEditorInputProp({ label: '最大日期', defaultValue: new Date() }),
-    defaultDate: createEditorInputProp({
-      label: '默认日期',
-      defaultValue: new Date('2013-2-15'),
-    }),
-    rowHeight: createEditorInputProp({ label: '行高', defaultValue: 32 }),
+    rowHeight: createEditorInputNumberProp({ label: '行高', defaultValue: 32 }),
     formatter: createEditorInputProp({ label: '日期格式化函数' }),
-    poppable: createEditorSwitchProp({ label: '弹出日历', defaultValue: true }),
-    lazyRender: createEditorSwitchProp({ label: '是否只渲染可视区域的内容', defaultValue: true }),
-    readonly: createEditorSwitchProp({ label: '是否为只读状态', defaultValue: false }),
-    confirmText: createEditorInputProp({ label: '确认按钮文字', defaultValue: '确定' }),
+    poppable: createEditorSwitchProp({ label: '弹出日历', defaultValue: false }),
     confirmDisabledText: createEditorInputProp({
       label: '确认按钮处于禁用状态时的文字',
       defaultValue: '确定',
