@@ -18,7 +18,7 @@
   const { jsonData } = visualData;
 
   window.addEventListener('beforeunload', () => {
-    sessionStorage.setItem(localKey, JSON.stringify(jsonData));
+    sessionStorage.setItem(localKey, JSON.stringify(jsonData)); // 保存到本地
   });
 </script>
 

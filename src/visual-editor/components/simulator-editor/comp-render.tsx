@@ -1,5 +1,5 @@
 /*
- * @Description:
+ * @Description:  传给组件的数据 - props - styles - model - block - custom
  * @FilePath: \vite-vue3-lowcode\src\visual-editor\components\simulator-editor\comp-render.tsx
  */
 import { defineComponent, PropType } from 'vue';

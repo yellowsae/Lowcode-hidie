@@ -38,7 +38,7 @@ export default {
     console.log('style', styles);
     return () => (
       <div style={styles}>
-        <Image ref={(el) => registerRef(el, block._vid)} {...props} />
+        <Image src={props.src} ref={(el) => registerRef(el, block._vid)} {...props} />
       </div>
     );
   },

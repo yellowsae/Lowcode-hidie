@@ -92,7 +92,7 @@
   // 点击当前节点
   const handleNodeClick = (data) => {
     setCurrentPage(data.path);
-    router.push(data.path);
+    router.push(data.path); // 添加页面路由
   };
 
   /**

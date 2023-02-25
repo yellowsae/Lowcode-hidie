@@ -5,6 +5,7 @@ import 'nprogress/css/nprogress.css'; // 进度条样式
 NProgress.configure({ showSpinner: false }); // NProgress Configuration
 
 const routes: Array<RouteRecordRaw> = [
+  // 指定编译器的路由
   {
     path: '/:pathMatch(.*)*',
     component: () => import('@/visual-editor/index.vue'),

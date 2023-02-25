@@ -1,3 +1,8 @@
+<!--
+  description: 模拟器编辑器 - 编译器主题部分
+   - 组件渲染部分
+ -->
+
 <template>
   <div class="simulator-container">
     <div class="simulator-editor">
@@ -70,7 +75,7 @@
   import { generateNanoid } from '@/visual-editor/utils';
 
   defineOptions({
-    name: 'SimulatorEditor',
+    name: 'SimulatorEditor', // 编译器主题
   });
 
   const { currentPage, setCurrentBlock } = useVisualData();

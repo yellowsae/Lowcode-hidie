@@ -9,7 +9,6 @@ import {
   createEditorSelectProp, // 生成下拉框
   createEditorSwitchProp, // 生成开关
   createEditorColorProp, // 生成颜色选择器
-  createEditorInputNumberProp, // 生成数字输入框
 } from '@/visual-editor/visual-editor.props';
 import { useGlobalProperties } from '@/hooks/useGlobalProperties';
 
@@ -24,7 +23,7 @@ export default {
       <div {...props} ref={(el) => registerRef(el, block._vid)} style={styles}>
         <Calendar
           showConfirm={props.showConfirm}
-          style="height: 200px"
+          style="height: 400px"
           poppable={false}
           title={props.title}
           color={props.color}
@@ -69,12 +68,6 @@ export default {
     }),
     minDate: createEditorInputProp({ label: '最小日期', defaultValue: new Date() }),
     maxDate: createEditorInputProp({ label: '最大日期', defaultValue: new Date() }),
-    rowHeight: createEditorInputNumberProp({ label: '行高', defaultValue: 32 }),
     formatter: createEditorInputProp({ label: '日期格式化函数' }),
-    poppable: createEditorSwitchProp({ label: '弹出日历', defaultValue: false }),
-    confirmDisabledText: createEditorInputProp({
-      label: '确认按钮处于禁用状态时的文字',
-      defaultValue: '确定',
-    }),
   },
 } as VisualEditorComponent;
