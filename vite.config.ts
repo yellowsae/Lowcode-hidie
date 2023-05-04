@@ -130,7 +130,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
     server: {
       host: '0.0.0.0',
       port: 9001, // 设置服务启动端口号
-      open: false, // 设置服务启动时是否自动打开浏览器
+      open: true, // 设置服务启动时是否自动打开浏览器
       cors: true, // 允许跨域
 
       // 设置代理，根据项目实际情况配置

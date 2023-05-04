@@ -1,8 +1,4 @@
 /*
- * @Author: 卜启缘
- * @Date: 2021-05-04 05:36:58
- * @LastEditTime: 2021-07-13 18:20:44
- * @LastEditors: 卜启缘
  * @Description: 导航栏项
  * @FilePath: \vite-vue3-lowcode\src\packages\base-widgets\tabbar\tabbar-item.tsx
  */

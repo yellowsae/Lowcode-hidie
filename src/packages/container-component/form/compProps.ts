@@ -1,12 +1,3 @@
-/*
- * @Author: 卜启缘
- * @Date: 2021-06-01 09:45:21
- * @LastEditTime: 2021-07-03 09:35:21
- * @LastEditors: 卜启缘
- * @Description:
- * @FilePath: \vite-vue3-lowcode\src\packages\container-component\form\compProps.ts
- */
-
 import {
   createEditorInputProp,
   createEditorSelectProp,

@@ -1,8 +1,4 @@
 /*
- * @Author: 卜启缘
- * @Date: 2021-06-14 12:24:12
- * @LastEditTime: 2021-06-14 12:38:02
- * @LastEditors: 卜启缘
  * @Description:
  * @FilePath: \vite-vue3-lowcode\src\packages\base-widgets\notice-bar\createFieldProps.ts
  */

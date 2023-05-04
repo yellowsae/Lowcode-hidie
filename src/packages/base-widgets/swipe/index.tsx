@@ -1,8 +1,4 @@
 /*
- * @Author: 卜启缘
- * @Date: 2021-06-14 12:24:12
- * @LastEditTime: 2021-07-13 17:12:11
- * @LastEditors: 卜启缘
  * @Description: 轮播图组件
  * @FilePath: \vite-vue3-lowcode\src\packages\base-widgets\swipe\index.tsx
  */

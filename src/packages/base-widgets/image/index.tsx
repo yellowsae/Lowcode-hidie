@@ -1,8 +1,4 @@
 /*
- * @Author: 卜启缘
- * @Date: 2021-06-01 09:45:21
- * @LastEditTime: 2021-07-13 17:14:05
- * @LastEditors: 卜启缘
  * @Description: 图片组件
  * @FilePath: \vite-vue3-lowcode\src\packages\base-widgets\image\index.tsx
  */

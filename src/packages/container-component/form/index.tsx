@@ -1,9 +1,5 @@
 /*
- * @Author: 卜启缘
- * @Date: 2021-06-01 09:45:21
- * @LastEditTime: 2021-07-13 17:15:43
- * @LastEditors: 卜启缘
- * @Description:
+ * @Description: 容器组件
  * @FilePath: \vite-vue3-lowcode\src\packages\container-component\form\index.tsx
  */
 import { renderSlot, useSlots } from 'vue';

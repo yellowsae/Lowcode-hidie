@@ -4,13 +4,6 @@ import {
   createEditorSwitchProp,
 } from '@/visual-editor/visual-editor.props';
 
-/**
- * @name: createFieldProps
- * @author: 卜启缘
- * @date: 2021/5/4 13:57
- * @description：createFieldProps
- * @update: 2021/5/4 13:57
- */
 export const createFieldProps = () => ({
   colon: createEditorSwitchProp({ label: '是否在 label 后面添加冒号' }),
   'error-message': createEditorInputProp({ label: '底部错误提示文案' }),

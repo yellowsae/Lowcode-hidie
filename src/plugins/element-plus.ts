@@ -71,6 +71,7 @@ const components = [
 
 const plugins = [ElLoading, ElInfiniteScroll];
 
+// 注册使用在 布局的 elementPlus 组件
 export function setupElementPlus(app: App) {
   components.forEach((component: Component) => {
     app.component(component.name!, component);

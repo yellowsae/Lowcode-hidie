@@ -1,8 +1,4 @@
 /*
- * @Author: 卜启缘
- * @Date: 2021-06-01 09:45:21
- * @LastEditTime: 2021-07-14 10:32:21
- * @LastEditors: 卜启缘
  * @Description: '表单项类型 - 步进器
  * @FilePath: \vite-vue3-lowcode\src\packages\base-widgets\stepper\index.tsx
  */

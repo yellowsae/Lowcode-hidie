@@ -93,6 +93,7 @@
       background-image: url('@/assets/logo.png');
       background-repeat: no-repeat;
       background-size: contain;
+      border-radius: 50;
     }
 
     .tool-item {

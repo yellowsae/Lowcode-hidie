@@ -5,13 +5,6 @@ import {
   createEditorModelBindProp,
 } from '@/visual-editor/visual-editor.props';
 
-/**
- * @name: createFieldProps
- * @author: 卜启缘
- * @date: 2021/5/4 13:57
- * @description：createFieldProps
- * @update: 2021/5/4 13:57
- */
 export const createFieldProps = () => ({
   modelValue: createEditorInputProp({
     label: '默认值',
