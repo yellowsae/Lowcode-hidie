@@ -1,8 +1,4 @@
 /*
- * @Author: 卜启缘
- * @Date: 2021-07-11 17:53:54
- * @LastEditTime: 2022-07-02 22:58:55
- * @LastEditors: 卜启缘
  * @Description: 组件属性配置
  * @FilePath: /vite-vue3-lowcode/src/visual-editor/components/right-attribute-panel/components/attr-editor/components/prop-config/index.tsx
  */

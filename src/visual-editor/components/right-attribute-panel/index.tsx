@@ -1,8 +1,4 @@
 /*
- * @Author: 卜启缘
- * @Date: 2021-06-01 13:22:14
- * @LastEditTime: 2021-07-05 11:06:49
- * @LastEditors: 卜启缘
  * @Description: 属性编辑器
  * @FilePath: \vite-vue3-lowcode\src\visual-editor\components\right-attribute-panel\index.tsx
  * RightAttributePanel

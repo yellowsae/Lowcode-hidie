@@ -1,10 +1,3 @@
-/**
- * @name: useModal
- * @author: 卜启缘
- * @date: 2021/5/7 15:26
- * @description：useModal
- * @update: 2021/5/7 15:26
- */
 import {
   defineComponent,
   reactive,

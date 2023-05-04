@@ -1,8 +1,4 @@
 /*
- * @Author: 卜启缘
- * @Date: 2021-05-04 05:36:58
- * @LastEditTime: 2021-07-13 17:18:23
- * @LastEditors: 卜启缘
  * @Description:
  * @FilePath: \vite-vue3-lowcode\preview\views\comp-render.tsx
  */

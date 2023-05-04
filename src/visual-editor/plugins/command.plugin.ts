@@ -81,11 +81,6 @@ export function useCommander() {
     return init;
   })();
 
-  /**
-   * useCommander初始化函数，负责初始化键盘监听事件，调用命令的初始化逻辑
-   * @author  卜启缘
-   * @date    2021/4/22 11:35 下午
-   */
   const init = () => {
     const onKeydown = (_: KeyboardEvent) => {
       // console.log('监听到键盘时间')

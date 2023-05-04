@@ -1,8 +1,4 @@
 /*
- * @Author: 卜启缘
- * @Date: 2021-06-01 09:45:21
- * @LastEditTime: 2021-07-08 16:47:34
- * @LastEditors: 卜启缘
  * @Description: 全局声明文件
  * @FilePath: \vite-vue3-lowcode\src\visual-editor\types\index.d.ts
  */
