@@ -3,7 +3,7 @@
     <!--    左侧logo start-->
     <el-col :span="6" class="flex items-center">
       <!-- 链接到个人博客页 -->
-      <a href="#" target="_parentb">
+      <a href="#" target="_self">
         <div class="logo"></div>
       </a>
       <h3 class="font-semibold">LowCode</h3>
