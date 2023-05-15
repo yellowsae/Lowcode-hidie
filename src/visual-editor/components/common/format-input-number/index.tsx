@@ -1,9 +1,4 @@
 /*
- * @Author: 卜启缘
- * @Date: 2021-07-06 22:14:13
- * @LastEditTime: 2021-07-07 16:32:50
- * @LastEditors: 卜启缘
- * @Description:
  * @FilePath: \vite-vue3-lowcode\src\visual-editor\components\common\format-input-number\index.tsx
  */
 import { defineComponent } from 'vue';

@@ -44,10 +44,6 @@
 
 <script lang="ts" setup>
   /**
-   * @description：slot-item
-   * @update: 2021/5/2 22:36
-   *
-   *
    * - DraggableTransitionGroup  拖拽组件
    */
 
